@@ -1,0 +1,109 @@
+$primary-cyan: hsl(179, 62%, 43%);
+$secondary-cyan: hsl(179, 65%, 48%);
+$primary-bright-yellow: hsl(71, 73%, 54%);
+$secondary-gray: hsl(204, 43%, 93%);
+$grayish-blue: hsl(218, 22%, 67%);
+
+$default-font-size: 16px;
+$default-font-family: 'Karla', sans-serif;
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    padding: max(0.638vw, 10px);
+    text-align: center;
+    border-radius: 5px;
+    &.btn-primary{
+        background-color: $primary-bright-yellow;
+        color: #fff;
+        &:hover{
+            color: $grayish-blue;
+        }
+    }
+}
+
+
+body{
+    font-size: $default-font-size;
+    font-family: $default-font-family;
+    background-color: $secondary-gray;
+    margin: 0;
+    #main{
+
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .box-wrapper{
+            background-color: #FFF;
+            .top-container{
+                background-color: #fff;
+                padding: max(1.500vw, 40px);
+                h1{
+                    color: $primary-cyan;
+                }
+                h3{
+                    color: $primary-bright-yellow;
+                }
+                p{
+                    margin: unset;
+                }
+            }
+    
+            .bottom-container{
+                display: grid;
+                grid-template-columns: auto auto;
+                color: #fff;
+
+                .price-container{
+                    background-color: $primary-cyan;
+                    padding: max(1.500vw, 40px) max(1.500vw, 40px);
+                    h1{
+                        display: flex;
+                        align-items: center;
+                        span{
+                            font-size: $default-font-size;
+                            margin-left: max(0.625vw, 10px);
+                            color: $secondary-gray;
+                        }
+                    }
+                    a{
+                        display: block;
+                        margin-top: 20px;
+                        transition: all 0.4s ease;
+                    }
+                }
+
+                .marketing-container{
+                    background-color: $secondary-cyan;
+                    padding: max(1.500vw, 40px) max(1.500vw, 40px);
+                    ul{
+                        list-style: none;
+                        padding-left: unset;
+                        li{
+                            color: $secondary-gray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 375px){
+    body{
+        #main{
+            .box-wrapper{
+                .bottom-container{
+                    grid-template: none;
+                }
+            }
+        }
+    }
+    .bottom-container{
+        
+    }
+}

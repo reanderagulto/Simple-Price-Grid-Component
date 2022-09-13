@@ -1,0 +1,86 @@
+a {
+  text-decoration: none;
+}
+
+.btn {
+  padding: max(0.638vw, 10px);
+  text-align: center;
+  border-radius: 5px;
+}
+.btn.btn-primary {
+  background-color: hsl(71deg, 73%, 54%);
+  color: #fff;
+}
+.btn.btn-primary:hover {
+  color: hsl(218deg, 22%, 67%);
+}
+
+body {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  background-color: hsl(204deg, 43%, 93%);
+  margin: 0;
+}
+body #main {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body #main .box-wrapper {
+  background-color: #FFF;
+}
+body #main .box-wrapper .top-container {
+  background-color: #fff;
+  padding: max(1.5vw, 40px);
+}
+body #main .box-wrapper .top-container h1 {
+  color: hsl(179deg, 62%, 43%);
+}
+body #main .box-wrapper .top-container h3 {
+  color: hsl(71deg, 73%, 54%);
+}
+body #main .box-wrapper .top-container p {
+  margin: unset;
+}
+body #main .box-wrapper .bottom-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  color: #fff;
+}
+body #main .box-wrapper .bottom-container .price-container {
+  background-color: hsl(179deg, 62%, 43%);
+  padding: max(1.5vw, 40px) max(1.5vw, 40px);
+}
+body #main .box-wrapper .bottom-container .price-container h1 {
+  display: flex;
+  align-items: center;
+}
+body #main .box-wrapper .bottom-container .price-container h1 span {
+  font-size: 16px;
+  margin-left: max(0.625vw, 10px);
+  color: hsl(204deg, 43%, 93%);
+}
+body #main .box-wrapper .bottom-container .price-container a {
+  display: block;
+  margin-top: 20px;
+  transition: all 0.4s ease;
+}
+body #main .box-wrapper .bottom-container .marketing-container {
+  background-color: hsl(179deg, 65%, 48%);
+  padding: max(1.5vw, 40px) max(1.5vw, 40px);
+}
+body #main .box-wrapper .bottom-container .marketing-container ul {
+  list-style: none;
+  padding-left: unset;
+}
+body #main .box-wrapper .bottom-container .marketing-container ul li {
+  color: hsl(204deg, 43%, 93%);
+}
+
+@media only screen and (max-width: 375px) {
+  body #main .box-wrapper .bottom-container {
+    grid-template: none;
+  }
+}/*# sourceMappingURL=style.css.map */
